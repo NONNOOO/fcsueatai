@@ -1,0 +1,131 @@
+.container-new{
+    padding-bottom: 200px;
+    width: 100%;
+    height: 100%;
+    background-color: #0C1A34;
+}
+
+.show{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,390px);
+    grid-template-rows: repeat(3,250px);
+    grid-gap: 2px;
+}
+
+.show-items{
+    display: flex;
+    align-items: flex-end;
+    box-sizing: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+    cursor: pointer;
+    transition: .5s ease;
+    overflow: hidden;
+}
+
+.show-items-title{
+    position:absolute ;
+    top: 0;
+    left: 0;
+    background: #273c75;
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 0 10 rgba(0,0,0, 0.2s);
+    transition: .3s ease;
+}
+
+.show-items-head{
+    position: absolute;
+    color: #fff;
+    padding: 10px;
+    text-shadow: 0 0 10px #000;
+    transition: .3s ease;
+    max-height: 58px;
+    width:  100%;
+    overflow: hidden;
+    background-image: linear-gradient(0deg,black,transparent);
+}
+
+.show-items img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition:  .3s ease;
+}
+
+.show-items:first-child{
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 2;
+} 
+
+.show-items:first-child .show-items-head{
+    font-size: 1.5rem;
+    padding: 20px;
+    padding-bottom: 60px;
+    min-height: 40px;
+    overflow: hidden;
+}
+
+.show-items:hover .show-items-head{
+    color: #e5e5e5;
+}
+.show-items:hover .show-items-title{
+    background: #fff;
+    color: #273c75;
+
+}
+.show-items:hover img{
+    width: 105%;
+    height: 105%;
+    object-position: center;
+}
+
+.container-news{
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 100%;
+}
+.container-news h2{
+    font-size: 1.5rem;
+}
+.container-news h6{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: 'Mitr', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    color: #fff;
+}
+.container-news p{
+    max-width: 900px;
+    font-size: 1rem;
+    text-indent: 53px;
+}
+.css-ruuwmp {
+    margin-bottom: 20px;
+    grid-column: span 2;
+}
+
+.css-ruuwmp span:after {
+    content: "";
+    background: #273c75;
+    height: 3px;
+    width: 100%;
+}
+.css-ruuwmp span {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 10px;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-style: italic;
+}
